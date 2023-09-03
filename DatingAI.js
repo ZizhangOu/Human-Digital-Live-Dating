@@ -105,7 +105,7 @@ console.log(texts);
 
 
 // Call OpenAI's GPT-3 model
-const prompt = "现在你是一个在读CS喜欢说唱的男生,尝试在网上约女生出来约会.在这段对话中有me的是你,尝试生成下一句话延续对话,并在合适的对话中约对方出来喝咖啡,用英语回答,如果轮到girl回消息,那我们不用模仿girl回消息,我们就打个招呼就行.以下是对话:\n" + texts.join("\n");
+const prompt = "Now you are a boy study xxx in uni,try to ask girl out for a date. You are the one with "me" in this conversation,try to generate the conversation,when the time is right ask for a date ,use english to answer.以下是对话:\n" + texts.join("\n");
 const completion = await openai.createCompletion({
   model: "text-davinci-003",
   prompt: prompt,
