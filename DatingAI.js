@@ -38,20 +38,7 @@ const openai = new OpenAIApi(configuration);
     deviceScaleFactor: 2
   });
 
-  
- /// Define your selector for the button
-  const buttonSelector = 'button[class*="Bgi($g-ds-background-like):a"]';
 
-  // Wait for the button to appear on the page
-  await page.waitForSelector(buttonSelector);
-
- 
-
-
-  for (let i = 0; i < 5; i++) {
-    await page.click(buttonSelector);
-    await new Promise(r => setTimeout(r, 500)); // Optional: wait for 1 second (1000 ms) between clicks
-  } 
   
  
 
